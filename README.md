@@ -27,3 +27,4 @@ Run all commands from the repository root.
 2. Matches won per team per year
 3. Extra runs conceded per team in 2016
 4. Top economical bowlers in 2015
+5. Most sixes hit by a batsman in 2015
