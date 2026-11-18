@@ -37,3 +37,14 @@ WHERE m.season = 2015 AND d.is_super_over = 0
 GROUP BY d.bowler
 ORDER BY economy ASC
 LIMIT 10;
+
+-- 5. Most number of sixes hit by a batsman in 2015
+select d.batsman, 
+count(d.batsman_runs) as sixes 
+from deliveries d 
+inner join matches m on m.id=d.match_id 
+where m.season=2015
+and d.batsman_runs=6 
+group by d.batsman 
+order by sixes desc 
+limit 1;
